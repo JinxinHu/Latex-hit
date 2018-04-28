@@ -1,0 +1,63 @@
+% arara: lualatex
+\documentclass{scrbook}
+\usepackage{fontspec}
+\usepackage{blindtext}
+\setmainfont{EBGaramond}
+\setsansfont{TeX Gyre Bonum}
+\setkomafont{disposition}{\normalfont}
+\begin{document}
+\begin{titlepage}
+	\setlength{\parindent}{0pt}
+	\centering  Dixie Dancing Ducks\par
+\end{titlepage}
+\begin{titlepage}
+	%https://github.com/johannesbottcher/titlepageExamples/blob/master/duck.tex
+	\centering
+	\vspace*{.15\textheight}
+	{\Large\addfontfeature{Letters=SmallCaps} Paulo Duck\par}
+	\vspace*{.15\textheight}
+	{\itshape\Huge Dixie Dancing Ducks\par}
+	\vfill
+	\centering
+	2015\par
+	Pond Press Ltd., The Pond
+	\vspace{.05\textheight}
+\end{titlepage}
+	Dedicated to all the ducks in the world\par
+	\vfill
+	\thispagestyle{empty}
+	\begin{flushleft}
+		Paulo Duck\\
+		Dixie Dancing Ducks\\
+		2015\\
+		Typeset using LuaLaTeX and EB Garamond\\
+	\end{flushleft}
+\tableofcontents
+\chapter{Introduction}
+\blindtext
+
+\blindtext
+
+\blindtext
+
+
+
+
+\setchapterpreamble[u]{
+\dictum[Donald]{test me if you can}
+}
+\chapter{Materials and Methods}
+\blindtext {\sffamily Lorem Ipsum} \blindtext
+
+\begin{figure}[b]
+	\centering
+	\rule{.6\linewidth}{3cm}
+\caption{A black rectangle where a picture could be}
+\end{figure}
+\blindtext
+
+\blindtext[4]
+\end{document}
+% This example does a very strange thing, it defines a serif-font
+% to take place as the default for the sans-serif part. That
+% means two serifs are used in one document. Be careful here. 
