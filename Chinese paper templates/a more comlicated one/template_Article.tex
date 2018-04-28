@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{ctex}
+\usepackage{indentfirst}
+\graphicspath{{chapter/}{figures/}}
+\usepackage{CJK}
+\usepackage{tabularx}
+\usepackage{commath}
+\usepackage{tikz}         % 绘图
+\usepackage{hologo}       % bibtex 图标
+\usepackage{amsmath}      % iint
+\usepackage{txfonts}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{url}
+\usepackage[super,square]{natbib}
+
+
+\setcounter{secnumdepth}{3}
+\renewcommand\thesection{\arabic {section}}
+\usepackage{float}
+\usepackage{graphicx,subfig}
+\usepackage{amssymb}
+\usepackage{caption}
+%\usepackage[numbers]{natbib}
+\usepackage{listings}
+\lstset{language=Matlab}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} 
+\lstset{breaklines}%自动将长的代码行换行排版
+\lstset{extendedchars=false}%解决代码跨页时，章节标题，页眉等汉字不显示的问题
+
+\begin{document}
+	\captionsetup[figure]{labelfont={bf},name={图},labelsep=period}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%% 封面部分
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=0.2\textwidth]{sf1.png}\par
+		\vspace{1cm}
+		\includegraphics[width=0.8\textwidth]{sf.jpg}\par
+		\vspace{0.1cm}
+		{\scshape\LARGE Harbin Institute of Technology \par}
+		\vspace{1cm}
+		{\kaishu\LARGE 计算光学\par}
+		{\scshape\LARGE Computational Optics \par}
+		\vspace{1.5cm}
+		{\Huge\bfseries 题目\par}
+		
+		\vspace{2cm}
+		{\fangsong\Large\itshape 你的名字\par}
+		\vfill
+		\large{1161100121}\par
+		\large\fangsong{Department of }
+		
+		\vfill
+		指导教师	\textsc{your teacher name}
+		\vfill
+		% Bottom of the page
+		{\large \today\par}
+	\end{titlepage}
+	\tableofcontents
+	\include{thanks}
+	\include{body}
+	\include{comment}
+\end{document}
