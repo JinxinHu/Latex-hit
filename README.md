@@ -5,6 +5,7 @@ There are some basic examples of latex using as well.So if you are New to Latex 
 If you have any questions,you can just leave me a message on this website or somewhere else...But `Commercial use` is forbidden.\
 SOME USEFUL LINKS\
 [My Blog](http://hahaha.i11r.com)\
+[My Homepage](http://www.jacobstudio.top)\
 [Hithesis](https://github.com/dustincys/hithesis)\
 If you find something which is useful for you please give me a little `encouragement` so that I would be motivated to continue wrting more beautiful codes.It's very kind of you to leave me a message and if you want to `contribute` to this project and here is the way.\
 `Thanks a lot.`\
